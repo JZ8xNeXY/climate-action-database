@@ -1,0 +1,56 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --src-dir --import-alias \"@/*\" --no-git --use-npm)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -m venv:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:policies.env.go.jp)",
+      "mcp__supabase__list_organizations",
+      "mcp__supabase__list_projects",
+      "mcp__supabase__search_docs",
+      "mcp__supabase__get_cost",
+      "mcp__supabase__confirm_cost",
+      "mcp__supabase__create_project",
+      "mcp__supabase__get_project_url",
+      "mcp__supabase__get_publishable_keys",
+      "mcp__supabase__apply_migration",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__execute_sql",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(lsof:*)",
+      "Bash(npx tsc:*)",
+      "WebSearch",
+      "WebFetch(domain:www.e-stat.go.jp)",
+      "WebFetch(domain:www.gsi.go.jp)",
+      "WebFetch(domain:data.e-gov.go.jp)",
+      "WebFetch(domain:www.soumu.go.jp)",
+      "WebFetch(domain:www.stat.go.jp)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)",
+      "Bash(git commit:*)",
+      "Bash(gh repo create:*)",
+      "Bash(git rm:*)",
+      "Bash(git push:*)",
+      "Bash(gh repo delete:*)",
+      "Bash(gh auth refresh:*)",
+      "Bash(git checkout:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "github",
+    "supabase"
+  ],
+  "disabledMcpjsonServers": [
+    "gdrive",
+    "github"
+  ]
+}
