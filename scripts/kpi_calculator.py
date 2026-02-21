@@ -149,8 +149,9 @@ def calc_deviation_score(values: List[float], target_value: float) -> float:
     if std == 0:
         return 50.0
 
-    # 削減率の場合、低い方（より削減）が良いので符号を反転
-    deviation = 50 + 10 * (mean - target_value) / std
+    # 値が高い方が良い場合の偏差値計算（例：削減率の絶対値）
+    # target_value が mean より大きいほど偏差値が高くなる
+    deviation = 50 + 10 * (target_value - mean) / std
 
     return round(deviation, 1)
 

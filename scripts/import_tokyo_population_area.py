@@ -20,7 +20,7 @@ supabase: Client = create_client(supabase_url, supabase_key)
 
 # 1. 人口データを読み込み（人口・世帯ファイル）
 print("=== 人口データ読み込み ===")
-df_pop = pd.read_excel('data/population_households_2022.xls', sheet_name='A', header=None)
+df_pop = pd.read_excel('../data/population_households_2022.xls', sheet_name='A', header=None)
 
 # データ行を抽出（10行目以降）
 df_pop_data = df_pop.iloc[10:].copy()
@@ -33,7 +33,7 @@ print(f"人口データ: {len(df_pop_tokyo)}件")
 
 # 2. 面積データを読み込み（自然環境ファイル）
 print("\n=== 面積データ読み込み ===")
-df_area = pd.read_excel('data/natural_environment_2022.xls', sheet_name='B', header=None)
+df_area = pd.read_excel('../data/natural_environment_2022.xls', sheet_name='B', header=None)
 
 # データ行を抽出（10行目以降）
 df_area_data = df_area.iloc[10:].copy()

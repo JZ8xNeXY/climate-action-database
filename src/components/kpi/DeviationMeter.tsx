@@ -67,16 +67,7 @@ export default function DeviationMeter({
               lineHeight: 1,
             }}
           >
-            {score.toFixed(0)}
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: dmMono.style.fontFamily,
-              fontSize: '12px',
-              color: 'text.secondary',
-            }}
-          >
-            / 100
+            {score.toFixed(1)}
           </Typography>
           <Typography
             sx={{
